@@ -14,6 +14,16 @@
       document.body.style.overflow = 'hidden';
     }
 
+    var body = document.querySelector('[data-fuuno-body]');
+    if (body) {
+      body.style.width = innerWidth + 'px';
+      body.style.height = innerHeight + 'px';
+      body.style.overflow = 'auto';
+    } else {
+      var msg = 'Add [data-fuuno-body] to a <element> instead of the <body>';
+      console.warning(msg);
+    }
+
     var arr = Array.prototype.slice.call(els);
     for (var i = 0, len = arr.length; i < len; i++) {
       fix(arr[i]);
