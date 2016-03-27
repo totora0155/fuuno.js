@@ -1,0 +1,30 @@
+{
+  "name": "fuuno.js",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/fuuno.js",
+  "scripts": {
+    "build": "rollup -c",
+    "prestart": "npm run build",
+    "start": "chokidar lib/fuuno.js -c 'npm run build'",
+    "prepublish": "uglifyjs dist/fuuno.js -o dist/fuuno.min.js -cm --comments all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/totora0155/fuuno.js.git"
+  },
+  "keywords": [
+    "fixed"
+  ],
+  "author": "nju33",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/totora0155/fuuno.js/issues"
+  },
+  "homepage": "https://github.com/totora0155/fuuno.js#readme",
+  "devDependencies": {
+    "chokidar-cli": "^1.2.0",
+    "rollup": "^0.25.6",
+    "uglify-js": "^2.6.2"
+  }
+}

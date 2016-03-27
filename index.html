@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Fuuno.js</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div style="overflow:hidden;">
+    <div style="width:30%;float:left;height:300vh"></div>
+    <div id="1" class="fuuno" style="position:relative;width:70%;float:left;height:130vh;background:orange;">
+      <div style="overflow:auto;position:absolute;bottom:0;height:40vh;width:100%">
+        <div style="width:30%;float:left;height:200vh;background:#fff;"></div>
+        <div id="2" class="fuuno" style="position:relative;width:70%;float:left;height:70vh;background:yellow;">
+      </div>
+    </div>
+  </div>
+
+  <script src="dist/fuuno.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      var els = document.getElementsByClassName('fuuno');
+      fuuno(els);
+    }, false);
+  </script>
+</body>
+</html>
