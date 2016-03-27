@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-.wrapper {
+.wrapper1 {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -10,5 +10,18 @@ body {
   display: flex;
   width: 100vw;
   height: 100vh;
+  overflow: auto;
+}
+
+.wrapper2 {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30vh;
   overflow: auto;
 }

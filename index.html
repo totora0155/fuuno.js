@@ -6,23 +6,28 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body style="overflow: hidden;">
-
-  <!-- <div style="overflow:hidden;">
-    <div style="width:30%;float:left;height:300vh"></div>
-    <div id="1" class="fuuno" style="position:relative;width:70%;float:left;height:130vh;background:orange;">
-      <div style="overflow:auto;position:absolute;bottom:0;height:40vh;width:100%">
-        <div style="width:30%;float:left;height:200vh;background:#fff;"></div>
-        <div id="2" class="fuuno" style="position:relative;width:70%;float:left;height:70vh;background:yellow;">
-      </div>
-    </div>
-  </div> -->
-
-  <div id="wrapper" class="wrapper">
-    <div style="flex-basis:30%;">
+  <div class="wrapper1">
+    <div style="flex: 1 1 20%;">
       <div style="height:1000vh;"></div>
     </div>
-    <div id="1" style="flex-basis:70%;">
-      <div class="fuuno" style="height:120vh;background:orange;"></div>
+    <div style="flex: 1 1 60%;">
+      <div class="fuuno" style="position:relative;height:170vh;background:orange;">
+        <div class="wrapper2">
+          <div style="flex: 1 1 30%">
+            <div style="height: 300vh;background:#414141;"></div>
+          </div>
+          <div style="flex: 1 1 30%">
+            <div class="fuuno" style="height:50vh;background:green;"></div>
+          </div>
+          <div style="flex: 1 1 30%">
+            <div class="fuuno" style="height:20vh;background:purple;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="flex: 1 1 20%;">
+      <div class="fuuno" style="height:80vh;background:red;"></div>
+    </div>
   </div>
 
   <script src="dist/fuuno.js"></script>
