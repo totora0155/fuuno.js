@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}
